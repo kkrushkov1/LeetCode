@@ -1,3 +1,5 @@
+package Easy;
+
 public class Stocks {
     public static void main(String[] args) {
 //        int [ ] prices = new int[]{7,6,4,3,1};

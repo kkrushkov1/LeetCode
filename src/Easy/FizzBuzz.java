@@ -1,3 +1,5 @@
+package Easy;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +16,7 @@ public class FizzBuzz {
 
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                numbers.add("FizzBuzz");
+                numbers.add("Easy.FizzBuzz");
             } else if (i % 5 == 0) {
                 numbers.add("Buzz");
             } else if (i % 3 == 0) {
