@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ReshapeTheMatrix {
 
     public static void main(String[] args) {
-        int [][] matrix1 = {{1,2,3},{4,5,6}};
+        int [][] matrix1 = {{1,2,3,4},{5,6}};
 
         System.out.println(Arrays.deepToString(matrixReshape(matrix1, 2, 4)));
     }
