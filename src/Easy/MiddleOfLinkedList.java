@@ -1,6 +1,23 @@
 package Easy;
 
 public class MiddleOfLinkedList {
+
+    public static ListNode middleNode(ListNode head) {
+        ListNode root = head;
+        int length = 0;
+
+        while (root != null) {
+            root = root.next;
+            length++;
+        }
+        length = (int) Math.ceil(length / 2);
+        for (int i = 0; i < length; i++) {
+            head = head.next;
+        }
+        return head;
+    }
+
+
     ListNode head;
 
     public static void main(String[] args) {
@@ -17,22 +34,6 @@ public class MiddleOfLinkedList {
         forth.next = fifth;
 
         System.out.println(middleNode(cycle.head));
-    }
-
-
-    public static ListNode middleNode(ListNode head) {
-        ListNode root = head;
-        int length = 0;
-
-        while (root != null) {
-            root = root.next;
-            length++;
-        }
-        length = (int) Math.ceil(length / 2);
-        for (int i = 0; i < length; i++) {
-            head = head.next;
-        }
-        return head;
     }
 
 
